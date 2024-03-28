@@ -1,0 +1,39 @@
+@import "../styles/variables.scss";
+
+main {
+    height: 100%;
+    display: flex;
+
+    .contacts {
+        flex: 2;
+        background-color: $dark-gray;
+
+        display: flex;
+        flex-direction: column;
+
+        header {
+            height: 48px;
+            background-color: $black;
+            color: $white;
+            
+            font-size: larger;
+            font-weight: bold;
+    
+            padding: 12px;
+    
+            position: sticky;
+            top: 0
+        }
+
+        .contacts-items {
+            flex: 1;
+            overflow-y: auto;
+        }
+    }
+
+    .chat {
+        background-image: url("/assets/circles.svg");
+        background-color: $dark-gray;
+        flex: 8;
+    }
+}
