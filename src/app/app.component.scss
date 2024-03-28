@@ -7,6 +7,7 @@ main {
     .contacts {
         flex: 2;
         background-color: $dark-gray;
+        overflow-y: auto;
 
         display: flex;
         flex-direction: column;
@@ -22,12 +23,7 @@ main {
             padding: 12px;
     
             position: sticky;
-            top: 0
-        }
-
-        .contacts-items {
-            flex: 1;
-            overflow-y: auto;
+            top: 0;
         }
     }
 

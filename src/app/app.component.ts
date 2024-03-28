@@ -1,10 +1,17 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ContactComponent } from './components/contact/contact.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [
+    RouterOutlet,
+    CommonModule,
+
+    ContactComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -31,7 +38,7 @@ export class AppComponent {
       name: "Vladmir",
       role: "Mago",
       lore: "Vampiro hemomante de Noxus",
-      imageUrl: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vladmir_0.jpg"
-    },
+      imageUrl: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vladimir_0.jpg"
+    }
   ]
 }
