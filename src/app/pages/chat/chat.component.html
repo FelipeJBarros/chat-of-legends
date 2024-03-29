@@ -10,10 +10,11 @@
                     {{message.text}}
                 </div>
             </div>
+            <div #endOfChat></div>
         </div>
         <div class="input">
             <input type="text" placeholder="Envie uma mensagem...">
-            <button>
+            <button (click)="addMessage()">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M20 4L3 11L10 14M20 4L13 21L10 14M20 4L10 14"
@@ -26,7 +27,21 @@
             </button>
         </div>
     </section>
-    <section class="infos">
-        Personagem infos
+    <section class="info-container">
+        <img [src]="champTest.imageUrl" alt="champ">
+        <div class="info">
+            <div class="personal">
+                <h3>
+                    {{ champTest.name }}
+                </h3>
+                <small>
+                    {{ champTest.role }}
+                </small>
+            </div>
+            <div class="lore">
+                <h4>História:</h4>
+                {{ champTest.lore }}
+            </div>
+        </div>
     </section>
 </section>

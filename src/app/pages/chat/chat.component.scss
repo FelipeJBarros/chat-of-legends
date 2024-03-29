@@ -6,16 +6,52 @@
     
     display: flex;
 
-    .infos {
-        flex: 3;
+    .info-container {
+        flex: 4;
 
         border-left: 2px solid $dark-gray;
         background-color: $black;
-        padding: 12px;
+
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 100%;
+        }
+        
+        .info {
+            color: $white;
+            background-color: $black;
+            margin-top: -12px;
+            border-radius: 12px 12px 0 0;
+            padding: 12px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+
+            .personal {
+                text-align: center;
+                small {
+                    font-style: italic;
+                }
+            }
+
+            .lore {
+                width: 100%;
+                h4 {
+                    padding-bottom: 6px;
+                    margin-bottom: 12px;
+                    border-bottom: 1px solid $white;
+                }
+
+            }
+        }
     }
 
     .message-container {
-        flex: 9;
+        flex: 8;
         height: 100vh;
 
         .messages {
