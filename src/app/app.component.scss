@@ -6,8 +6,11 @@ main {
 
     .contacts {
         flex: 2;
-        background-color: $dark-gray;
+        background-color: $black;
         overflow-y: auto;
+        scroll-behavior: smooth;
+
+        border-right: 2px solid #fefefe22;
 
         display: flex;
         flex-direction: column;
@@ -28,7 +31,8 @@ main {
     }
 
     .chat {
-        background-image: url("/assets/circles.svg");
+        background: url("/assets/circles.svg") no-repeat;
+        background-size: cover;
         background-color: $dark-gray;
         flex: 8;
     }

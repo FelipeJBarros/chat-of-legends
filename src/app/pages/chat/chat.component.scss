@@ -1,0 +1,104 @@
+@import "../../../styles/variables.scss";
+
+.container {
+    height: 100%;
+    max-height: 100vh;
+    
+    display: flex;
+
+    .infos {
+        flex: 3;
+
+        border-left: 2px solid $dark-gray;
+        background-color: $black;
+        padding: 12px;
+    }
+
+    .message-container {
+        flex: 9;
+        height: 100vh;
+
+        .messages {
+            height: calc(100vh - 86px);
+            overflow: auto;
+            padding: 12px 24px 0px 24px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .chat-bubble-container {
+                display: flex;
+                width: 100%;
+
+                .chat-bubble {
+                    color: $white;
+                    width: fit-content;
+                    padding: 24px;
+                }
+            }
+
+            .chat-bubble-container.receive {
+                justify-content: flex-start;
+
+                .chat-bubble {
+                    background-color: $dark-gray;
+                    border-radius: 24px 24px 24px 0px;
+                }
+            }
+
+            .chat-bubble-container {
+                justify-content: flex-end;
+
+                .chat-bubble {
+                    background-color: $primary;
+                    border-radius: 24px 24px 0px 24px;
+                }
+            }
+        }
+    
+        .input {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            padding: 12px 12px 12px 24px;
+            margin: 12px 24px 12px;
+    
+            border-radius: 24px;
+            background-color: $dark-gray;
+    
+            input {
+                flex: 1;
+                height: 100%;
+    
+                color: $white;
+                background-color: $dark-gray;
+                border: none;
+    
+                font-size: 16px;
+            }
+    
+            input:focus {
+                border: none;
+                outline: none;
+            }
+
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $primary;
+                padding: 8px;
+                border-radius: 8px;
+                border: none;
+                outline: none;
+            
+                color: $dark-gray;
+                font-weight: 900;
+    
+                cursor: pointer;
+            }
+        }
+    }
+}

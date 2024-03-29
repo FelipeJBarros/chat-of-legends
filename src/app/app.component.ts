@@ -35,7 +35,7 @@ export class AppComponent {
     },
     {
       id: 3,
-      name: "Vladmir",
+      name: "Vladimir",
       role: "Mago",
       lore: "Vampiro hemomante de Noxus",
       imageUrl: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vladimir_0.jpg"
