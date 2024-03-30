@@ -3,7 +3,7 @@ import { ChatComponent } from './pages/chat/chat.component';
 
 export const routes: Routes = [
     {
-        path: "chat",
+        path: "chat/:id",
         component: ChatComponent
     }
 ];

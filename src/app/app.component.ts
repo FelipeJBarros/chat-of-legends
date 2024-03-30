@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { ContactComponent } from './components/contact/contact.component';
 
 @Component({
@@ -8,6 +8,7 @@ import { ContactComponent } from './components/contact/contact.component';
   standalone: true,
   imports: [
     RouterOutlet,
+    RouterLink,
     CommonModule,
 
     ContactComponent
