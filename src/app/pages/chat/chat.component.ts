@@ -1,10 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { SendIconComponent } from '../../components/icons/send-icon/send-icon.component';
 
 @Component({
   selector: 'app-chat',
   standalone: true,
-  imports: [CommonModule],
+  imports: [
+    CommonModule,
+
+    SendIconComponent
+  ],
   templateUrl: './chat.component.html',
   styleUrl: './chat.component.scss'
 })
