@@ -14,7 +14,9 @@ export class ChampionsService {
     return this.httpClient.get<ChampionType[]>(`${env.apiUrl}/champions`);
   }
 
-  findChampionById(championId: number) {}
+  findChampionById(championId: number) {
+    return this.httpClient.get<ChampionType>(`${env.apiUrl}/champions/${championId}`);
+  }
 
   askChampion(championId: number, question: string) {}
 }

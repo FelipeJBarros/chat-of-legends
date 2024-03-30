@@ -1,6 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { SendIconComponent } from '../../components/icons/send-icon/send-icon.component';
+import { ChampionType } from '../../types/ChampionType';
+import { ChampionsService } from '../../services/champions.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-chat',
@@ -10,10 +13,11 @@ import { SendIconComponent } from '../../components/icons/send-icon/send-icon.co
 
     SendIconComponent
   ],
+  providers: [ChampionsService],
   templateUrl: './chat.component.html',
   styleUrl: './chat.component.scss'
 })
-export class ChatComponent implements AfterViewInit{
+export class ChatComponent implements AfterViewInit, OnInit{
   messages = [
     {
       text: "Oi, tudo bem?",
@@ -73,15 +77,22 @@ export class ChatComponent implements AfterViewInit{
     }
   ]
 
-  champTest = {
-    id: 1,
-    name: "Poppy",
-    role: "Tank",
-    lore: "Yordle portadora do martelo",
-    imageUrl: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_0.jpg"
-  }
+  champion!: ChampionType
 
   @ViewChild('endOfChat') endAnchor!: ElementRef;
+
+  constructor(
+    private championService: ChampionsService,
+    private route: ActivatedRoute
+  ) { }
+
+  ngOnInit(): void {
+    this.route.params.subscribe((params: any) => {
+      this.championService.findChampionById(params['id']).subscribe(
+        data => this.champion = data
+      )
+    });
+  }
 
   ngAfterViewInit() {
     this.scroolToEndChat();
