@@ -12,12 +12,16 @@
             </div>
             <div #endOfChat></div>
         </div>
-        <div class="input">
-            <input type="text" placeholder="Envie uma mensagem...">
-            <button (click)="addMessage()">
+        <form [formGroup]="chatForm" (ngSubmit)="onSubmit()" class="input">
+            <input
+                type="text"
+                placeholder="Envie uma mensagem..."
+                formControlName="input"
+            >
+            <button type="button">
                   <app-send-icon />              
             </button>
-        </div>
+        </form>
     </section>
     <section class="info-container">
         <img [src]="champion.imageUrl" alt="champ">
