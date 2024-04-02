@@ -1,27 +1,33 @@
-# ChatOfLegends
+# Chat of Legends
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
+[![PRs Welcome](https://img.shields.io/badge/PRs-S%C3%A3o_bem_vindos-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Conventional friendly](https://img.shields.io/badge/Usamos-Conventional_commits-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/](https://www.conventionalcommits.org/en/v1.0.0/))
 
-## Development server
+Desfrute de acesso às informações dos campeões do renomado jogo League of Legends e interaja com eles por meio de perguntas.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este projeto foi desenvolvida em Angular.
 
-## Code scaffolding
+![chat of legends ui](https://i.imgur.com/eJUOOtG.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Server de desenvolvimento
 
-## Build
+No terminal, rode o comando `ng serve`. Acesse `http://localhost:4200/`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Projetos relacionados:
 
-## Running unit tests
+Esse frontend possui a integração com a API Chat-of-legends-API que pode ser encontrada [aqui](https://github.com/FelipeJBarros/chat-of-legends-api).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Tecnologias:
 
-## Running end-to-end tests
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## License
 
-## Further help
+Distributed under the MIT License.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contato
+
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/felipe-jonathan/)](https://www.linkedin.com/in/felipe-jonathan/)
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white&link=https://www.instagram.com/belipefarros/)](https://www.instagram.com/belipefarros/)
